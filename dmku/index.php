@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $d->添加弹幕($d_data);
         succeedmsg(23, true);
     } else {
-        succeedmsg(-2, "你tm发送的太频繁了,请问你单身几年了？");
+        succeedmsg(-2, "你tm发送的太频繁了,你有什么实力啊？");
     }
 }
 
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if ($_GET['ac'] == "report") {
         $text = $_GET['text'];
         sql::举报_弹幕($text);
-        showmessage(-3, '举报成功！感谢您为守护弹幕作出了贡献');
+        showmessage(-3, '举报成功！多谢');
     } else if ($_GET['ac'] == "dm" or $_GET['ac'] == "get") {
         $id = $_GET['id'] ?: showmessage(-1, null);
         $data = $d->弹幕池($id) ?: showmessage(23, []);
