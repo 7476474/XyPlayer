@@ -19,6 +19,6 @@
     'is_cdn' => 0,  //是否用了cdn
     '限制时间' => 60, //单位s
     '限制次数' => 20, //在限制时间内可以发送多少条弹幕
-    '允许url' => [https://www.dy.liusi.cloudns.org],  //跨域  格式['https://abc.com','http://cba.com']   要加协议
+    '允许url' => ['https://www.dy.liusi.cloudns.org'],  //跨域  格式['https://abc.com','http://cba.com']   要加协议
     '安装' => 1
 ];
